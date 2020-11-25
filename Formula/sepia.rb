@@ -2,24 +2,24 @@
 class Sepia < Formula
   desc "A minimal interpreted language."
   homepage "https://github.com/rishiosaur/sepia"
-  version "0.1.3"
+  version "0.1.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/rishiosaur/sepia/releases/download/v0.1.3/sepia_0.1.3_darwin_amd64.tar.gz"
-    sha256 "06f7621ff477e0edf1546629efdd7f5570c33fcf471177c2ff45667876c36048"
+    url "https://github.com/rishiosaur/sepia/releases/download/v0.1.4/sepia_0.1.4_darwin_amd64.tar.gz"
+    sha256 "65197dbcb5fa016fe48528746c86b60634aec79c713651c95865c04019a72f54"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/rishiosaur/sepia/releases/download/v0.1.3/sepia_0.1.3_linux_amd64.tar.gz"
-    sha256 "592a86ca7797efb449fba2274f5fa2a8814dc0879835a55fea3d93a842d010d8"
+    url "https://github.com/rishiosaur/sepia/releases/download/v0.1.4/sepia_0.1.4_linux_amd64.tar.gz"
+    sha256 "5cc3f1567324109f0a6401fed39b9b79b21159a5276c325fa90bb3e0ce7b07d9"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/rishiosaur/sepia/releases/download/v0.1.3/sepia_0.1.3_linux_armv6.tar.gz"
-    sha256 "2be3bf72e0a62133cdfb2c7c9b889ff88dba3b24d29bf646173c612a57efebc3"
+    url "https://github.com/rishiosaur/sepia/releases/download/v0.1.4/sepia_0.1.4_linux_armv6.tar.gz"
+    sha256 "dce5c2aea4d80a0cd232919244e461dcdd12f8cec0a4678205165ce53619f8b6"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/rishiosaur/sepia/releases/download/v0.1.3/sepia_0.1.3_linux_arm64.tar.gz"
-    sha256 "cfaf0be3e2cffe69d8d14bc9d0622b668a0c9c577954c6b537fc792e0a12ab48"
+    url "https://github.com/rishiosaur/sepia/releases/download/v0.1.4/sepia_0.1.4_linux_arm64.tar.gz"
+    sha256 "9f9b5973b1a6f48325e840987cf6a5efe8b88d930945063e5e2c580ffed2523b"
   end
 
   def install

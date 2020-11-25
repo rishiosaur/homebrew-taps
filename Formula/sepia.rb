@@ -7,19 +7,19 @@ class Sepia < Formula
 
   if OS.mac?
     url "https://github.com/rishiosaur/sepia/releases/download/v0.1.4/sepia_0.1.4_darwin_amd64.tar.gz"
-    sha256 "65197dbcb5fa016fe48528746c86b60634aec79c713651c95865c04019a72f54"
+    sha256 "ef570bf69ae2c08e25195a6e2760aa3680e8e17a60ba4377196bdc95d540952d"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/rishiosaur/sepia/releases/download/v0.1.4/sepia_0.1.4_linux_amd64.tar.gz"
-    sha256 "5cc3f1567324109f0a6401fed39b9b79b21159a5276c325fa90bb3e0ce7b07d9"
+    sha256 "ee65c0202a64e000b90fcb3ce21ea489231bf56760a26e02aea1de438d91e150"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
     url "https://github.com/rishiosaur/sepia/releases/download/v0.1.4/sepia_0.1.4_linux_armv6.tar.gz"
-    sha256 "dce5c2aea4d80a0cd232919244e461dcdd12f8cec0a4678205165ce53619f8b6"
+    sha256 "ee351abb5907a833ed901a36be98ca3aa7a189fb0702b7b83b3a0a6a5c5ba951"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/rishiosaur/sepia/releases/download/v0.1.4/sepia_0.1.4_linux_arm64.tar.gz"
-    sha256 "9f9b5973b1a6f48325e840987cf6a5efe8b88d930945063e5e2c580ffed2523b"
+    sha256 "431a725466b296cc12d68ea828d2e07a0c2d0c0904ea0fee4fb74936c7eebc1a"
   end
 
   def install
